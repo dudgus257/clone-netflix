@@ -1,0 +1,106 @@
+@media (max-width:768px) {
+    body{
+        font-size: 16px;
+    }
+    header{
+        padding:35px 25px;
+    }
+    .language select{
+        padding:5px 10px;
+        margin:0;
+        margin-right:10px
+    }
+    .logo img{
+        width: 120px;
+    }
+    .welcome{
+        height: 100vh;
+    }
+    .heading{
+        width: 100%;
+    }
+    .heading h1{
+        font-size: 34px;
+    }
+    .heading h5{
+        font-size: 23px;
+    }
+    .heading p{
+        font-size: 14px;
+    }
+    .search input[type=email]{
+        width: 300px;
+        margin-bottom:20px;
+        height: 45px;
+    }
+    .search button{
+        width: 150px;
+        font-size: 15px;
+        height: 45px;
+    }
+    .inner{
+        width: 100%;
+        position:static;
+        transform:translate(0)
+    }
+    .inner > div{
+        float:none
+    }
+    .description,
+    .preview{
+        float:none;
+        width: 100%;
+        text-align:center
+    }
+    .description h2{
+        font-size: 30px;
+    }
+    .description p{
+        font-size: 18px;
+    }
+    .enjoy,
+    .device,
+    .kids,
+    .download{
+    height: auto;
+    padding:30px 10px;
+    }
+    /* question */
+    .question{
+        padding:50px 0
+    }
+    .question-inner{
+        width: 90%;
+    }
+    .accordion{
+        margin:30px 0
+    }
+    .question-inner h1{
+        font-size: 25px;
+    }
+    input[name=question-item] + label{
+        font-size: 16px;
+        padding:10px
+    }
+    input[name=question-item] + label span{
+        display:none
+    }
+    .question-content{
+        font-size: 12px;
+    }
+    input[name=question-item]:checked + label + .question-content{
+        padding:10px
+    }
+    aside p{
+        font-size: 14px
+    }
+    /* footer */
+    .footer-inner{
+        width: 90%;
+    }
+    /* login-modal */
+    .login{
+        width: 400px;
+        height: 450px;
+    }
+}

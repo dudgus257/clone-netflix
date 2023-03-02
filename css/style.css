@@ -1,0 +1,432 @@
+/* Font : Roboto */
+/* font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* XEICON CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+/* 공통 CSS */
+* {
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+    margin:0
+}
+body, html {
+    background-color:#000;
+    color:#f3f3f3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height:1.6em
+}
+body.active{
+    overflow:hidden
+}
+a {
+    text-decoration: none;
+    color:#f3f3f3
+}
+section{
+    border-bottom:8px solid #222;
+    position:relative
+}
+/* reset CSS */
+h1,h2,h3,h4,h5,h6{
+    margin:0
+}
+
+/* display */
+.welcome{
+    /* display:none */
+}
+.enjoy{
+    /* display:none */
+}
+.device{
+    /* display:none */
+}
+.kids{
+    /* display:none */
+}
+.download{
+    /* display:none */
+}
+.question{
+    /* display:none */
+}
+footer{
+    /* display:none */
+}
+.modal-login{
+    /* display:none */
+}
+
+/* header */
+header{
+    overflow:hidden;
+    padding:40px 55px;
+    position:absolute;
+    width: 100%;
+    z-index:10
+
+}
+.logo{
+    float:left
+}
+.logo img{
+    width: 134px;
+    height: 36px;
+    cursor:pointer
+}
+.language{
+    float:right;
+}
+/* .language select:before{
+    content:"\e9d1";
+    font-family: xeicon;
+    color:#fff;
+    display:block;
+    position:absolute;
+    top:50%;
+    border:1px solid #fff
+} */
+.language select{
+    padding:0.5rem 1.375rem;
+    font-size: .875rem;
+    line-height:1.3em;
+    margin:0 32px;
+    background: rgba(0,0,0,.4);
+    color:#fff;
+    border:1px solid #aaa;
+    cursor:pointer
+}
+.signin{
+    float:right
+}
+.signin button{
+    background-color:#e50914;
+    font-size: 1rem;
+    font-weight: 400;
+    padding:7px 17px;
+    border-radius: 3px;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    text-transform:capitalize
+}
+/* Welcome */
+.welcome{
+    height: 693px;
+    background: url(../images/bg.jpg) no-repeat center center;
+    background-size:cover;
+    position:relative;
+}
+.welcome:before{
+    content:'';
+    position:absolute;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.9));
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+.heading{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+    max-width:950px;
+}
+.heading h1{
+    font-size: 3.125rem;
+    line-height:1.2em;
+    max-width:640px;
+    font-weight: 500;
+}
+.heading h5{
+    font-size: 1.625rem;
+    margin-bottom:40px;
+    margin-top:22px;
+    font-weight: normal;
+}
+.heading p{
+    font-size: 1.2rem;
+    padding-bottom:20px;
+    max-width:none;
+}
+.search input[type=email],
+.search button {
+    height: 60px;
+    outline:none;
+    border:none;
+    vertical-align: middle;
+}
+.search input[type=email] {
+    width: 450px;
+    margin-right:-3px;
+    font-size: 16px;
+    padding-left:10px;
+    color:#8c8c8c
+}
+.search button {
+    width: 220px;
+    background-color: #e50914;
+    background-image: linear-gradient(180deg,#e50914,#db0510);
+    box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+    color: #fff;
+    font-size: 26px;
+    cursor:pointer
+}
+
+/* Section : enjoy, device, kids, download */
+.enjoy,
+.device,
+.kids,
+.download{
+    padding:70px 45px;
+    height: 500px;
+}
+
+.inner{
+    width: 1100px;
+    margin:auto;
+    overflow:hidden;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%)
+}
+.inner > div {
+    float:left;
+}
+.description{
+    padding-top:40px;
+    width: 60%;
+    padding:0 3rem 0 3rem;
+}
+.description h2{
+    font-size: 3.125rem;
+    line-height:1.2em;
+    margin:40px 0;
+}
+.description p{
+    font-size:26px;
+    font-weight: 400;
+    margin: 0.75em 0 0.25em;
+    line-height: 2.5rem;
+}
+.preview{
+    text-align:center;
+    width: 40%;
+}
+.preview img{
+    width: 100%;
+}
+/* question */
+.question{
+    padding:80px 0;
+}
+.question-inner{
+    width: 850px;
+    margin:auto
+}
+.accordion{
+    margin:52px 0;
+}
+.question-inner h1{
+    font-size: 3.125rem;
+    line-height:1.1;
+    text-align:center;
+    margin-bottom:20px
+}
+input[name=question-item]{
+    display:none
+}
+input[name=question-item] + label {
+    display:block;
+    background-color:#303030;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    font-weight: 400;
+    font-size: 26px;
+    cursor:pointer;
+    margin-bottom:1px;
+    position:relative
+}
+.question-content{
+    background-color:#303030;
+    padding:0;
+    margin-bottom:10px;
+    font-size: 25px;
+    line-height:2.2rem;
+    font-weight: 400;
+    /* display:none; */
+    max-height: 0;
+    overflow:hidden;
+    transition: max-height 0.5s
+}
+/* Accordion function */
+input[name=question-item]:checked + label + .question-content{
+    /* display:block */
+    max-height: 500px;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+}
+
+/* plus-icon function */
+input[name=question-item] + label span {
+    right:1em;
+    position:absolute;
+    transition:0.3s;
+    width: 1em;
+    height: 1em;
+    font-size: 26px;
+}
+input[name=question-item]:checked + label span{
+    transform: rotate(45deg);
+}
+aside{
+    width:100%;
+    text-align:center;
+}
+aside p{
+    padding-bottom:20px;
+    font-size: 1.3rem;
+}
+/* footer */
+footer{
+    padding:50px 0;
+    font-size: 13px;
+    color:#737373
+}
+.footer-inner{
+    width: 850px;
+    margin:auto
+}
+.sitemap{}
+.sitemap h6{
+    font-size: 16px;
+    margin-bottom:30px;
+    font-weight: 300;
+}
+.sitemap h6 span{
+    cursor:pointer
+}
+.sitemap h6 span:hover{
+    text-decoration: #737373 underline;
+}
+
+.links{
+    display:flex;
+    flex-direction: row;
+}
+.items{
+    width: 25%;
+    flex-direction: column;
+    
+}
+.items a{
+    color:#737373;
+    display:block
+}
+.items a:hover{
+    text-decoration: #737373 underline;
+}
+.footer-language select{
+    padding:0.5rem 1.375rem;
+    font-size: .875rem;
+    line-height:1.3em;
+    background: rgba(0,0,0,.4);
+    color:#999;
+    border:1px solid #333;
+    cursor:pointer;
+    margin:30px 0
+}
+.copyright p{
+    line-height: 1.2rem;
+}
+
+/* login-modal */
+.modal-login{
+    background-color:rgb(0, 0, 0, 0.7);
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index:100;
+    display:none
+}
+.login{
+    width: 450px;
+    height: 500px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background-color:rgb(0, 0, 0, 0.8);
+    padding:50px;
+    color:#737373
+}
+.login i{
+    float:right;
+    cursor:pointer
+}
+.login h1{
+    color:#fff;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom:28px
+}
+.login input[type=text],
+.login input[type=password]{
+    background-color:#333;
+    padding:20px 15px;
+    border-radius: 5px;
+    width: 100%;
+    border:none;
+    margin-bottom:20px;
+    font-size: 16px;
+    color:#fff
+}
+.login input[type=button]{
+    background-color:#e50914;
+    padding:20px 15px;
+    border-radius: 5px;
+    width: 100%;
+    border:none;
+    margin-bottom:20px;
+    color:#fff;
+    font-size: 16px;
+    cursor:pointer;
+    font-weight: 500;
+}
+.save-info{
+    overflow:hidden;
+    margin-top:10px;
+    margin-bottom:50px;
+    color:#b3b3b3
+}
+.save-info label{
+    float:left;
+    font-size: 13px;
+}
+.save-info a{
+    float:right;
+    color:#b3b3b3;
+    font-size: 13px;
+}
+.learn{
+    font-size: 13px;
+}
+.learn-more{
+    color:#0071eb
+}
+.login a:hover{
+    text-decoration: underline;
+}
+.btn-close{
+    font-size: 30px;
+    position:absolute;
+    right:20px;
+    top:20px
+}

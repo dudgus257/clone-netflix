@@ -1,0 +1,87 @@
+.wrap
+    header
+        .logo
+            img
+        .language
+            select
+                option
+                option
+        .siginin
+            button
+    section.welcome
+        .heading
+            h1
+            h5
+            p
+        .search
+            input type=email, span, button
+    section.enjoy
+        .inner
+            .description
+                h2
+                p
+            .preview
+                img
+    section.device
+        .inner
+            .preview
+                img
+            .description
+                h2
+                p
+    section.kids
+        .inner
+            .description
+                h2
+                p
+            .preview
+                img
+    section.offline
+        .inner
+            .preview
+                img
+            .description
+                h2
+                p
+    section.question
+        .inner
+            h1
+            article.accordion
+                input type=radio
+                label
+                question-content  * 6
+            aside
+                p
+                .search
+                    input type=email, span, button
+    footer
+        .footer-inner
+            .sitemap
+                h6
+                .links
+                    .items
+                        a*4
+                    .items
+                        a*4
+                    .items
+                        a*4
+                    .items
+                        a*3
+            .copyright
+                p
+
+.modal-login
+    .login
+        i.btn-close
+        h1
+        input type=text
+        input type=password
+        button type=button
+        .save-info
+            label
+                input type=checkbox
+            a
+        span
+            a
+        p
+            a.learn-more
